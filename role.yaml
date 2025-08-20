@@ -1,8 +1,8 @@
 apiVersion: rbac.authorization.k8s.io/v1
 kind: Role
 metadata:
-  namespace: default-trainee
-  name: default
+  namespace: default
+  name: default-trainee
 rules:
   - apiGroups: [""]
     resources: ["pods"]
@@ -12,8 +12,8 @@ rules:
 apiVersion: rbac.authorization.k8s.io/v1
 kind: RoleBinding
 metadata:
-  name: default
-  namespace: default-trainee
+  name: default-trainee
+  namespace: default
 subjects:
 - kind: User
   name: suresh

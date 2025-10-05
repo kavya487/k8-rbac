@@ -20,5 +20,5 @@ subjects:
   apiGroup: rbac.authorization.k8s.io
 roleRef:
   kind: Role
-  name: default
+  name: default-trainee
   apiGroup: rbac.authorization.k8s.io
